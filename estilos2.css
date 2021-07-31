@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(192, 93, 159);
+}
+
+/* BARRA DE MENU */
+
+.navegacion{
+    width: 1000px;
+    background-color: white;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+.MENU>li{
+    position: relative;
+    display: inline-block;
+}
+
+.MENU>li>a{
+    display: inline-block;
+    padding: 20px 50px;
+    color: green;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+}
+.MENU>li>a:hover{
+    background-color: blue;
+    color: white;
+}
+/* SUB MENU */
+.SUB-MENU{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.SUB-MENU li a{
+    display: block;
+    padding: 7px;
+    color: green;
+    text-decoration: none;
+}
+.MENU li:hover .SUB-MENU{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.SUB-MENU>li>a:hover{
+    color: red;
+    transition: 0.5s;
+}
+/* ESTILOS DEL TITULO */
+.TITULO{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.TITULO h1{
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+}
+.TITULO h3{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.TITULO img{
+    margin-top: 40px;
+}
+
+/* slider */
+
+.slider{
+    width: 80%;
+    margin: auto;
+}
+.slider ul{
+    padding: 0;
+}
